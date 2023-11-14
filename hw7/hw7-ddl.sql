@@ -139,6 +139,10 @@ INSERT INTO peopleskills (skills_id, people_id, date_acquired) VALUES
 (2, 9, '2023-02-10'), (5, 9, '2023-04-15'), (6, 9, '2023-06-01'),
 (1, 10, '2023-01-25'), (4, 10, '2023-04-20'), (5, 10, '2023-05-15');
 
+select * from peopleskills;
+
+    
+
 # Section 8
 # Create roles( id, name, sort_priority )
 # sort_priority is an integer and is used to provide an order for sorting roles

@@ -10,9 +10,7 @@ format:
         code-copy: true
 ---
 
-(include a brief description of what is in this document)
-
-
+This document includes sections for setting up a MySQL database using python. It also has ER diagrams to visualize the relationships between the tables.
 
 GITHUB URL:  https://github.com/cmsc-vcu/cmsc508-fa2023-hw7-hcbryant9
 
@@ -92,7 +90,7 @@ except Exception as e:
 
 ## Overview and description
 
-(briefly describe the project and the database)
+The project involves creating a database for managing/organizing resumes. The tables include people, skills, roles, as well as their relationships. 
 
 ## Crows-foot diagram
 
@@ -115,7 +113,6 @@ erDiagram
 
 ## Examples of data in the database
 
-For the people, skills, and roles tables, provide a description of each table and it's contents. Then provide a listing of the entire table.
 
 ### People table
 
@@ -149,8 +146,18 @@ Below is a list of data in the *skills* table.
 ```{python}
 #| echo: false
 #| eval: true
-
+sql = f"""
+select * from skills;
+"""
 ## Add code to list roles table here
+try:
+    df = pd.read_sql(sql,cnx)
+    df
+except Exception as e:
+    message = str(e)
+    print(f"An error occurred:\n\n{message}\n\nIgnoring and moving on.")
+    df = pd.DataFrame()
+df
 ```
 
 ### Roles table
@@ -162,8 +169,18 @@ Below is a list of data in the *roles* table.
 ```{python}
 #| echo: false
 #| eval: true
-
+sql = f"""
+select * from roles;
+"""
 ## Add code to list roles table here
+try:
+    df = pd.read_sql(sql,cnx)
+    df
+except Exception as e:
+    message = str(e)
+    print(f"An error occurred:\n\n{message}\n\nIgnoring and moving on.")
+    df = pd.DataFrame()
+df
 ```
 
 
