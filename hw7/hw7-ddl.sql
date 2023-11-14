@@ -16,7 +16,7 @@
 # Section 1
 # Drops all tables.  This section should be amended as new tables are added.
 
-SET FOREIGN_KEY_CHECKS=0;
+
 DROP TABLE IF EXISTS people;
 DROP TABLE IF EXISTS skills;
 DROP TABLE IF EXISTS peopleskills;
@@ -94,8 +94,11 @@ VALUES
 (3, 'Robert', 'Person 3', 'robert@example.com', 'https://www.linkedin.com/in/robert', 'https://example.com/robert.jpg', 'robert#9876', 'A brief bio about Robert.', '2023-03-20'),
 (4, 'Emily', 'Person 4', 'emily@example.com', 'https://www.linkedin.com/in/emily', 'https://example.com/emily.jpg', 'emily#4321', 'A brief bio about Emily.', '2023-04-25'),
 (5, 'Alex', 'Person 5', 'alex@example.com', 'https://www.linkedin.com/in/alex', 'https://example.com/alex.jpg', 'alex#6543', 'A brief bio about Alex.', '2023-05-10'),
-(6, 'Sophia', 'Person 6', 'sophia@example.com', 'https://www.linkedin.com/in/sophia', 'https://example.com/sophia.jpg', 'sophia#1111', 'A brief bio about Sophia.', '2023-06-30');
-
+(6, 'Sophia', 'Person 6', 'sophia@example.com', 'https://www.linkedin.com/in/sophia', 'https://example.com/sophia.jpg', 'sophia#1111', 'A brief bio about Sophia.', '2023-06-30'),
+(7, 'Michael', 'Person 7', 'michael@example.com', 'https://www.linkedin.com/in/michael', 'https://example.com/michael.jpg', 'michael#2222', 'A brief bio about Michael.', '2023-07-15'),
+(8, 'Jessica', 'Person 8', 'jessica@example.com', 'https://www.linkedin.com/in/jessica', 'https://example.com/jessica.jpg', 'jessica#3333', 'A brief bio about Jessica.', '2023-08-01'),
+(9, 'David', 'Person 9', 'david@example.com', 'https://www.linkedin.com/in/david', 'https://example.com/david.jpg', 'david#4444', 'A brief bio about David.', '2023-08-15'),
+(10, 'Sophie', 'Person 10', 'sophie@example.com', 'https://www.linkedin.com/in/sophie', 'https://example.com/sophie.jpg', 'sophie#5555', 'A brief bio about Sophie.', '2023-09-01');
 
 
 # Section 6
